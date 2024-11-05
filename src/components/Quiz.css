@@ -1,0 +1,101 @@
+/* Quiz.css */
+
+/* General Styles */
+.quiz-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.quiz-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.question {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+.option-label {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option-label:hover {
+    background-color: #f1f5f9;
+}
+
+.option-input {
+    margin-right: 0.8rem;
+    transform: scale(1.2);
+}
+
+/* Space between questions */
+.question-container {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 1rem;
+}
+
+/* Submit button */
+.submit-quiz-btn {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 2rem;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-quiz-btn:hover {
+    background-color: #45A049;
+}
+
+/* Score Display */
+.score-display {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.pass {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.fail {
+    color: #E74C3C;
+    font-weight: bold;
+}
