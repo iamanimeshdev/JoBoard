@@ -1,11 +1,23 @@
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import questions from '../questions';
 import './Quiz.css';
 
 const Quiz = ({ onComplete }) => {
+  const [selectedQuestions, setSelectedQuestions] = useState([]);
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [score, setScore] = useState(null);
+
+  // Function to randomly select 10 questions
+  const selectRandomQuestions = () => {
+    // Shuffle the questions array and pick the first 10 elements
+    const shuffledQuestions = [...questions].sort(() => 0.5 - Math.random());
+    return shuffledQuestions.slice(0, 10);
+  };
+
+  // Set selectedQuestions when the component mounts
+  useEffect(() => {
+    setSelectedQuestions(selectRandomQuestions());
+  }, []);
 
   const handleAnswerChange = (questionIndex, answer) => {
     setSelectedAnswers({
@@ -16,7 +28,7 @@ const Quiz = ({ onComplete }) => {
 
   const handleSubmitQuiz = () => {
     let correctAnswers = 0;
-    questions.forEach((question, index) => {
+    selectedQuestions.forEach((question, index) => {
       if (selectedAnswers[index] === question.answer) {
         correctAnswers++;
       }
@@ -34,9 +46,9 @@ const Quiz = ({ onComplete }) => {
 
   return (
     <div className="quiz-container">
-      <h2 className="quiz-title">Software Engineering Quiz</h2>
+      <h2 className="quiz-title">Zeroth round</h2>
       
-      {questions.map((question, index) => (
+      {selectedQuestions.map((question, index) => (
         <div className="question-container" key={index}>
           <p className="question">{question.question}</p>
           

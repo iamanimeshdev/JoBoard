@@ -19,7 +19,7 @@ export default function Home({ recSignIn }) {
         <div className="content">
           <h1>Launch Your Dream Career!</h1>
           <p className="p-3">
-            Experience a seamless job search process with JoBoard. Our platform is designed to connect job seekers with employers looking for top talent. Start your journey towards a fulfilling career today.
+            Experience a seamless job search process with HireQuest. Our platform is designed to connect job seekers with employers looking for top talent. Start your journey towards a fulfilling career today.
           </p>
           <div className="d-flex gap-2">
             <Link to="/hire/login"><button type="button" className="btn btn-outline-dark btn-lg">Recruit Now</button></Link>
@@ -34,17 +34,17 @@ export default function Home({ recSignIn }) {
       <div className="testimonials">
         <h4>What Our Users Say</h4>
         <div className="testimonial">
-          <p>"JoBoard helped me find my dream job in just two weeks! The platform is easy to use and the support team is fantastic."</p>
-          <span>- Jane Doe</span>
+          <p>"HireQuest helped me find my dream job in just two weeks! The platform is easy to use and the support team is fantastic."</p>
+          <span>- Animesh</span>
         </div>
         <div className="testimonial">
-          <p>"As a recruiter, JoBoard has been invaluable in finding top talent quickly and efficiently."</p>
-          <span>- John Smith</span>
+          <p>"As a recruiter, HireQuest has been invaluable in finding top talent quickly and efficiently."</p>
+          <span>- Sahil</span>
         </div>
       </div>
       <div className="howItWorks">
         <h2>How It Works?</h2>
-        <p>JoBoard simplifies the job search process for both job seekers and employers. Here's how:</p>
+        <p>HireQuest simplifies the job search process for both job seekers and employers. Here's how:</p>
         <ul>
           <li>Sign up and create your profile.</li>
           <li>Search for jobs or internships that match your skills and interests.</li>

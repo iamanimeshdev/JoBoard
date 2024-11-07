@@ -50,7 +50,7 @@ export default function Header({ signIn, setSignIn, userName, recSignIn, setRecS
             <div className='d-flex align-items-center gap-3'>
                 <Link to="/" className='navbar-brand d-flex align-items-center gap-1' >
                     <img src={Logo} alt="Logo" width="37px" />
-                    <div className="logo">JoBoard</div>
+                    <div className="logo">HireQuest</div>
                 </Link>
                 <div className="navList">
                     <Link className="nav-link" to="/jobs">Jobs</Link>
